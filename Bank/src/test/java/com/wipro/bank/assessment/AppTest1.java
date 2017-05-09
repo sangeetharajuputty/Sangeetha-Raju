@@ -31,16 +31,4 @@ public class AppTest1 {
 		assertEquals("patel",acc.getName());
 	}
 	
-	@Test
-	public void getAccountDetailsByBalance1(){
-		assertNull("When No account found:",new App().getAccountDetailsByBalance(909.01));
 	}
-	
-	@Test
-	public void getAccountDetailsByBalance2(){
-		List<Account> actualAccounts=new App().getAccountDetailsByBalance(0.0);
-		assertNotNull(actualAccounts);
-		assertEquals(App.accounts.size(),actualAccounts.size());
-	}
-	
-}
