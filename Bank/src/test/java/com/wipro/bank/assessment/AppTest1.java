@@ -9,6 +9,7 @@ import org.junit.Test;
 import com.wipro.bank.entity.Account;
 
 public class AppTest1 {
+	//set of inputs
 
 	@Before
 	public void setUp() throws Exception {
@@ -59,6 +60,8 @@ public class AppTest1 {
 		List<Account> actualAccounts=new App().getAccountDetailsByBalance(amount);
 		assertNotNull(actualAccounts);
 		assertEquals(checkActualAccounts.size(),actualAccounts.size());
+		
+		
 	}
 
 }
